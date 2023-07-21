@@ -18,12 +18,12 @@ translator = Translator()
 text = st.text_input("Enter text")
 in_lang = st.selectbox(
     "Select your input language",
-    ("English", "Hindi", "Bengali", "korean", "Chinese", "Japanese"),
+    ("English", "Spanish", "Bengali", "korean", "Chinese", "Japanese"),
 )
 if in_lang == "English":
     input_language = "en"
-elif in_lang == "Hindi":
-    input_language = "hi"
+elif in_lang == "Spanish":
+    input_language = "es"
 elif in_lang == "Bengali":
     input_language = "bn"
 elif in_lang == "korean":
@@ -35,12 +35,12 @@ elif in_lang == "Japanese":
 
 out_lang = st.selectbox(
     "Select your output language",
-    ("English", "Hindi", "Bengali", "korean", "Chinese", "Japanese"),
+    ("English", "Spanish", "Bengali", "korean", "Chinese", "Japanese"),
 )
 if out_lang == "English":
     output_language = "en"
-elif out_lang == "Hindi":
-    output_language = "hi"
+elif out_lang == "Spanish":
+    output_language = "es"
 elif out_lang == "Bengali":
     output_language = "bn"
 elif out_lang == "korean":
